@@ -1,0 +1,53 @@
+# Virtual environment
+env/
+.env
+
+# Database
+db.sqlite3
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Django specific
+*.log
+staticfiles/
+media/
+
+# IDE files
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+.eggs/
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Environment variables (if using .env file)
+.env.local
+.env.*.local
+
+# Django
+local_settings.py
+/staticfiles/
+/media/
+
+# VS Code specific
+*.code-workspace
+
+# Backup files
+*.bak
+*~
