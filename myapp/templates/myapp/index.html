@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Menu</title>
+</head>
+<body>
+    <h1>Hello</h1>
+    <ul>
+        {% for item in item_list %}
+            <li>
+                {% comment %} Using the names from urlpatterns for dynamic urls {% endcomment %}
+                <a href="{% url 'myapp:detail' item.id %}">
+                    {{item.item_name}} - {{item.item_price}} - {{item.item_desc}}
+                </a>
+            </li>
+        {% endfor %}
+    </ul>
+        
+</body>
+</html>
